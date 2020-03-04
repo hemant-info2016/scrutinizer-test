@@ -22,6 +22,13 @@ class testClass {
         return array_key_exists($key, $this->data) ? $this->data[$key] : null;
     }
 
+    /**
+     * show off @property, @property-read, @property-write
+     *
+     * @property mixed $regular regular read/write property
+     * @property-read int $foo the foo prop
+     * @property-write string $bar the bar prop
+     */
     public function __set($key, $value) {
         echo "set $key = $value\n";
         $this->data[$key] = $value;
