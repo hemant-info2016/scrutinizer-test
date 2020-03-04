@@ -1,9 +1,11 @@
 <?php
 
 /**
- * 
+ * show off @property, @property-read, @property-write
  *
- * @property string $propertyData
+ * @property mixed $regular regular read/write property
+ * @property-read int $foo the foo prop
+ * @property-write string $bar the bar prop
  */
 class testClass {
 
