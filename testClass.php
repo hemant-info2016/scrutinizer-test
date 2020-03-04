@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * 
+ *
+ * @property string $propertyData
+ */
 class testClass {
 
     public $test1;
