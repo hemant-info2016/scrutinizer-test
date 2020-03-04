@@ -7,4 +7,11 @@ class testClass {
     function __construct() {
         
     }
+    
+    function __get($name, $value) {
+        
+        if(isset($this->$name) !== true) {
+            public $this->$name;
+        }
+    }
 }
