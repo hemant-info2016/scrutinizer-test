@@ -2,6 +2,13 @@
 
 include_once("testClass.php");
 
+/**
+ * show off @property, @property-read, @property-write
+ *
+ * @property mixed $test2 regular read/write property
+ * @property-read int $test2 the foo prop
+ * @property-write string $test2 the bar prop
+ */
 $objTestClass = new testClass();
 
 $objTestClass->test1 = 'tet1';
