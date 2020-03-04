@@ -11,7 +11,7 @@ class testClass {
     function __get($name, $value) {
         
         if(isset($this->$name) !== true) {
-            public $this->$name;
+            return $this->$name;
         }
     }
 }
