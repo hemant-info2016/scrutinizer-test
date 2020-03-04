@@ -8,7 +8,7 @@ class testClass {
         
     }
     
-    function __get($name, $value) {
+    public function __get($name, $value) {
         
         if(isset($this->$name) !== true) {
             return $this->$name;
